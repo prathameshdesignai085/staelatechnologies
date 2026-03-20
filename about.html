@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Staela Technologies</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+    </style>
+</head>
+<body class="bg-zinc-50 text-zinc-900 font-[Inter] antialiased selection:bg-[#FFCF01] selection:text-zinc-900">
+
+    <!-- Navigation -->
+    <header class="fixed top-0 w-full z-50 bg-zinc-50/80 backdrop-blur-md border-b border-zinc-200/80">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center">
+                <img src="assets/staela full logo.svg" alt="Staela Technologies" class="h-7 w-auto">
+            </a>
+            <nav class="hidden md:flex items-center gap-8">
+                <a href="index.html" class="text-sm font-normal text-zinc-500 hover:text-zinc-900 transition-colors">Home</a>
+                <a href="about.html" class="text-sm font-medium text-zinc-900">About Us</a>
+                <a href="products.html" class="text-sm font-normal text-zinc-500 hover:text-zinc-900 transition-colors">Products</a>
+                <a href="quality.html" class="text-sm font-normal text-zinc-500 hover:text-zinc-900 transition-colors">Quality Control</a>
+                <a href="contact.html" class="text-sm font-medium text-zinc-900 hover:text-zinc-600 transition-colors">Contact Us</a>
+            </nav>
+            <button id="mobile-menu-btn" class="md:hidden text-zinc-900" aria-label="Toggle menu">
+                <iconify-icon icon="solar:hamburger-menu-linear" class="text-2xl"></iconify-icon>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden border-t border-zinc-200 bg-zinc-50/95 backdrop-blur-md">
+            <nav class="flex flex-col px-6 py-4 gap-4">
+                <a href="index.html" class="text-sm font-normal text-zinc-500 hover:text-zinc-900 transition-colors">Home</a>
+                <a href="about.html" class="text-sm font-medium text-zinc-900">About Us</a>
+                <a href="products.html" class="text-sm font-normal text-zinc-500 hover:text-zinc-900 transition-colors">Products</a>
+                <a href="quality.html" class="text-sm font-normal text-zinc-500 hover:text-zinc-900 transition-colors">Quality Control</a>
+                <a href="contact.html" class="text-sm font-medium text-zinc-900 hover:text-zinc-600 transition-colors">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="pt-32 pb-16 md:pt-40 md:pb-20 px-6 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <div class="text-xs font-medium text-zinc-500 uppercase tracking-widest mb-3">About Us</div>
+                <h1 class="text-4xl md:text-5xl font-semibold tracking-tight text-zinc-900 mb-6 leading-tight">
+                    Built on Three Decades of Tungsten Carbide Mastery
+                </h1>
+                <p class="text-lg font-normal text-zinc-500 leading-relaxed">
+                    Located in Chakan Industrial Area — Pune's premier manufacturing hub.
+                </p>
+            </div>
+            <div class="w-full aspect-[4/3] bg-zinc-100 rounded-2xl border border-zinc-200 flex items-center justify-center overflow-hidden">
+                <img src="assets/10.png" alt="Staela Technologies Manufacturing Facility" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story -->
+    <section class="py-16 md:py-24 px-6 max-w-7xl mx-auto border-t border-zinc-200">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
+            <div>
+                <h2 class="text-3xl md:text-4xl font-medium tracking-tight text-zinc-900 mb-6">Our Story</h2>
+                <div class="space-y-4 mb-8">
+                    <p class="text-sm md:text-base font-normal text-zinc-500 leading-relaxed">
+                        Staela Technologies brings 30+ years of Tungsten Carbide expertise to the Oil &amp; Gas industry. Our fully integrated facility in Chakan is equipped with advanced CNC, VMC, and conventional machining capabilities.
+                    </p>
+                    <p class="text-sm md:text-base font-normal text-zinc-500 leading-relaxed">
+                        We design, manufacture, and test finished Tungsten Carbide wear parts tailored to customer-specific requirements — recommending the right carbide grades and optimal tool designs for reliable performance under extreme conditions.
+                    </p>
+                </div>
+                <blockquote class="pl-5 border-l-2 border-zinc-300">
+                    <p class="text-base font-medium text-zinc-800 italic leading-relaxed">
+                        "Excellence in oilfield operations begins with knowledge, and we deliver it on every tool we create."
+                    </p>
+                </blockquote>
+            </div>
+
+            <!-- Manufacturing Image -->
+            <div class="w-full aspect-[4/3] bg-zinc-100 rounded-2xl border border-zinc-200 flex items-center justify-center overflow-hidden">
+                <img src="assets/11.png" alt="CNC Manufacturing Process" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Cards -->
+    <section class="py-16 md:py-24 px-6 max-w-7xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-medium tracking-tight text-zinc-900 mb-12 text-center">What Sets Us Apart</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="p-6 bg-white border border-zinc-200 rounded-xl hover:border-zinc-300 transition-colors">
+                <div class="w-10 h-10 rounded-full bg-zinc-100 flex items-center justify-center mb-5">
+                    <iconify-icon icon="solar:settings-linear" class="text-xl text-zinc-900"></iconify-icon>
+                </div>
+                <h3 class="text-sm font-medium tracking-tight text-zinc-900 mb-2">Manufacturing Expertise</h3>
+                <p class="text-xs font-normal text-zinc-500 leading-relaxed">State-of-the-art CNC, VMC, and conventional machines under one roof for complete production control.</p>
+            </div>
+
+            <div class="p-6 bg-white border border-zinc-200 rounded-xl hover:border-zinc-300 transition-colors">
+                <div class="w-10 h-10 rounded-full bg-zinc-100 flex items-center justify-center mb-5">
+                    <iconify-icon icon="solar:pen-new-square-linear" class="text-xl text-zinc-900"></iconify-icon>
+                </div>
+                <h3 class="text-sm font-medium tracking-tight text-zinc-900 mb-2">Customized Solutions</h3>
+                <p class="text-xs font-normal text-zinc-500 leading-relaxed">Every product is engineered to match exact drawings, specifications, and application demands.</p>
+            </div>
+
+            <div class="p-6 bg-white border border-zinc-200 rounded-xl hover:border-zinc-300 transition-colors">
+                <div class="w-10 h-10 rounded-full bg-zinc-100 flex items-center justify-center mb-5">
+                    <iconify-icon icon="solar:clock-circle-linear" class="text-xl text-zinc-900"></iconify-icon>
+                </div>
+                <h3 class="text-sm font-medium tracking-tight text-zinc-900 mb-2">Quick Turnaround</h3>
+                <p class="text-xs font-normal text-zinc-500 leading-relaxed">Rapid quoting, efficient manufacturing, and on-time delivery on every order.</p>
+            </div>
+
+            <div class="p-6 bg-white border border-zinc-200 rounded-xl hover:border-zinc-300 transition-colors">
+                <div class="w-10 h-10 rounded-full bg-zinc-100 flex items-center justify-center mb-5">
+                    <iconify-icon icon="solar:handshake-linear" class="text-xl text-zinc-900"></iconify-icon>
+                </div>
+                <h3 class="text-sm font-medium tracking-tight text-zinc-900 mb-2">Long-Term Partnerships</h3>
+                <p class="text-xs font-normal text-zinc-500 leading-relaxed">Transparent pricing, consistent quality, and dedicated after-sales support for lasting business relationships.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Banner -->
+    <section class="bg-zinc-900 text-zinc-50 py-24 px-6">
+        <div class="max-w-5xl mx-auto text-center">
+            <div class="text-xs font-medium text-zinc-400 uppercase tracking-widest mb-8">Our Mission</div>
+            <p class="text-2xl md:text-4xl lg:text-5xl font-medium tracking-tight text-zinc-500 leading-tight">
+                "To work for <span class="text-[#FFCF01]">better solutions on applications</span> for reducing the cost per component with our <span class="text-[#FFCF01]">advance technology</span> of Tungsten Carbide Material."
+            </p>
+        </div>
+    </section>
+
+    <!-- The Staela Advantage -->
+    <section class="py-16 md:py-24 px-6 max-w-7xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-medium tracking-tight text-zinc-900 mb-16 text-center">The Staela Advantage</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+            <div class="text-center">
+                <iconify-icon icon="solar:user-speak-rounded-linear" class="text-3xl text-zinc-400 mb-4"></iconify-icon>
+                <h3 class="text-base font-medium text-zinc-900 mb-2">Technical Support</h3>
+                <p class="text-xs font-normal text-zinc-500 leading-relaxed">30 years of hands-on experience guiding material selection, grade recommendation, and tool design optimization.</p>
+            </div>
+            <div class="text-center">
+                <iconify-icon icon="solar:shield-check-linear" class="text-3xl text-zinc-400 mb-4"></iconify-icon>
+                <h3 class="text-base font-medium text-zinc-900 mb-2">Quality Assurance</h3>
+                <p class="text-xs font-normal text-zinc-500 leading-relaxed">Batch-after-batch consistency through rigorous QMS documentation, testing, and standardized processes.</p>
+            </div>
+            <div class="text-center">
+                <iconify-icon icon="solar:clock-circle-linear" class="text-3xl text-zinc-400 mb-4"></iconify-icon>
+                <h3 class="text-base font-medium text-zinc-900 mb-2">On Time Delivery</h3>
+                <p class="text-xs font-normal text-zinc-500 leading-relaxed">Reliable scheduling and streamlined production ensuring your components arrive when promised.</p>
+            </div>
+            <div class="text-center">
+                <iconify-icon icon="solar:handshake-linear" class="text-3xl text-zinc-400 mb-4"></iconify-icon>
+                <h3 class="text-base font-medium text-zinc-900 mb-2">After Sales Service</h3>
+                <p class="text-xs font-normal text-zinc-500 leading-relaxed">24x7 availability, transparent pricing, and dedicated support for lasting business relationships.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20 px-6 bg-zinc-900 text-white">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-medium tracking-tight mb-4">Ready to Work Together?</h2>
+            <p class="text-base text-zinc-400 mb-8">Connect with our team to discuss your Tungsten Carbide requirements.</p>
+            <a href="contact.html" class="inline-flex px-8 py-3 bg-white text-zinc-900 text-sm font-medium rounded-md hover:bg-[#FFCF01] transition-colors">
+                Get a Quote
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-zinc-50 border-t border-zinc-200 py-8 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+            <img src="assets/staela full logo.svg" alt="Staela Technologies" class="h-6 w-auto">
+            <nav class="flex items-center gap-6">
+                <a href="index.html" class="text-xs text-zinc-400 hover:text-zinc-600 transition-colors">Home</a>
+                <a href="about.html" class="text-xs text-zinc-400 hover:text-zinc-600 transition-colors">About</a>
+                <a href="products.html" class="text-xs text-zinc-400 hover:text-zinc-600 transition-colors">Products</a>
+                <a href="quality.html" class="text-xs text-zinc-400 hover:text-zinc-600 transition-colors">Quality</a>
+                <a href="contact.html" class="text-xs text-zinc-400 hover:text-zinc-600 transition-colors">Contact</a>
+            </nav>
+            <p class="text-xs font-normal text-zinc-400">&copy; 2026 Staela Technologies. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', function() { mobileMenu.classList.toggle('hidden'); });
+        mobileMenu.querySelectorAll('a').forEach(function(link) { link.addEventListener('click', function() { mobileMenu.classList.add('hidden'); }); });
+    </script>
+
+</body>
+</html>

@@ -8,48 +8,42 @@
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
-
-        input[type="text"], input[type="email"], input[type="tel"], textarea, select {
-            transition: border-color 0.15s ease, box-shadow 0.15s ease;
-        }
     </style>
 </head>
-<body class="bg-zinc-50 text-zinc-900 font-[Inter] antialiased selection:bg-zinc-900 selection:text-zinc-50">
+<body class="bg-zinc-50 text-zinc-900 font-[Inter] antialiased selection:bg-[#FFCF01] selection:text-zinc-900">
 
     <!-- Navigation -->
     <header class="fixed top-0 w-full z-50 bg-zinc-50/80 backdrop-blur-md border-b border-zinc-200/80">
         <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-            <a href="#home" class="flex items-center gap-2 text-lg font-medium tracking-tighter text-zinc-900">
-                <img src="assets/WhatsApp Image 2026-03-15 at 14.42.15 5 [Vectorized].svg" alt="Staela Technologies Logo" class="h-8 w-auto">
-                Staela Technologies
+            <a href="index.html" class="flex items-center">
+                <img src="assets/staela full logo.svg" alt="Staela Technologies" class="h-7 w-auto">
             </a>
             <nav class="hidden md:flex items-center gap-8">
-                <a href="#home" class="text-sm font-normal text-zinc-500 hover:text-zinc-900 transition-colors">Home</a>
-                <a href="#about" class="text-sm font-normal text-zinc-500 hover:text-zinc-900 transition-colors">About Us</a>
-                <a href="#products" class="text-sm font-normal text-zinc-500 hover:text-zinc-900 transition-colors">Products</a>
-                <a href="#quality" class="text-sm font-normal text-zinc-500 hover:text-zinc-900 transition-colors">Quality Control</a>
-                <a href="#contact" class="text-sm font-medium text-zinc-900 hover:text-zinc-600 transition-colors">Contact Us</a>
+                <a href="index.html" class="text-sm font-medium text-zinc-900">Home</a>
+                <a href="about.html" class="text-sm font-normal text-zinc-500 hover:text-zinc-900 transition-colors">About Us</a>
+                <a href="products.html" class="text-sm font-normal text-zinc-500 hover:text-zinc-900 transition-colors">Products</a>
+                <a href="quality.html" class="text-sm font-normal text-zinc-500 hover:text-zinc-900 transition-colors">Quality Control</a>
+                <a href="contact.html" class="text-sm font-medium text-zinc-900 hover:text-zinc-600 transition-colors">Contact Us</a>
             </nav>
             <button id="mobile-menu-btn" class="md:hidden text-zinc-900" aria-label="Toggle menu">
                 <iconify-icon icon="solar:hamburger-menu-linear" class="text-2xl"></iconify-icon>
             </button>
         </div>
-        <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden border-t border-zinc-200 bg-zinc-50/95 backdrop-blur-md">
             <nav class="flex flex-col px-6 py-4 gap-4">
-                <a href="#home" class="text-sm font-normal text-zinc-500 hover:text-zinc-900 transition-colors">Home</a>
-                <a href="#about" class="text-sm font-normal text-zinc-500 hover:text-zinc-900 transition-colors">About Us</a>
-                <a href="#products" class="text-sm font-normal text-zinc-500 hover:text-zinc-900 transition-colors">Products</a>
-                <a href="#quality" class="text-sm font-normal text-zinc-500 hover:text-zinc-900 transition-colors">Quality Control</a>
-                <a href="#contact" class="text-sm font-medium text-zinc-900 hover:text-zinc-600 transition-colors">Contact Us</a>
+                <a href="index.html" class="text-sm font-medium text-zinc-900">Home</a>
+                <a href="about.html" class="text-sm font-normal text-zinc-500 hover:text-zinc-900 transition-colors">About Us</a>
+                <a href="products.html" class="text-sm font-normal text-zinc-500 hover:text-zinc-900 transition-colors">Products</a>
+                <a href="quality.html" class="text-sm font-normal text-zinc-500 hover:text-zinc-900 transition-colors">Quality Control</a>
+                <a href="contact.html" class="text-sm font-medium text-zinc-900 hover:text-zinc-600 transition-colors">Contact Us</a>
             </nav>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="pt-40 pb-24 md:pt-52 md:pb-32 px-6 max-w-7xl mx-auto flex flex-col items-center text-center">
+    <section class="pt-40 pb-24 md:pt-52 md:pb-32 px-6 max-w-7xl mx-auto flex flex-col items-center text-center">
         <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-zinc-200 bg-white mb-8">
-            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+            <span class="w-2 h-2 rounded-full bg-[#FFCF01]"></span>
             <span class="text-xs font-medium text-zinc-600 uppercase tracking-widest">Specializing in Oil &amp; Gas Industry</span>
         </div>
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-zinc-900 mb-6 leading-tight max-w-4xl">
@@ -59,90 +53,176 @@
             Delivering high-performance carbide components built for the most demanding petroleum and natural gas environments. Engineered for durability. Manufactured for excellence.
         </p>
         <div class="flex flex-col sm:flex-row items-center gap-4">
-            <a href="#products" class="px-6 py-3 bg-zinc-900 text-white text-sm font-medium rounded-md hover:bg-zinc-800 transition-colors w-full sm:w-auto">
+            <a href="products.html" class="px-6 py-3 bg-zinc-900 text-white text-sm font-medium rounded-md hover:bg-[#FFCF01] hover:text-zinc-900 transition-colors w-full sm:w-auto">
                 View Products
             </a>
-            <a href="#contact" class="px-6 py-3 bg-white text-zinc-900 text-sm font-medium rounded-md border border-zinc-200 hover:bg-zinc-50 transition-colors w-full sm:w-auto">
+            <a href="contact.html" class="px-6 py-3 bg-white text-zinc-900 text-sm font-medium rounded-md border border-zinc-200 hover:bg-zinc-50 transition-colors w-full sm:w-auto">
                 Get a Quote
             </a>
         </div>
     </section>
 
-    <!-- About Us -->
-    <section id="about" class="py-24 md:py-32 px-6 max-w-7xl mx-auto border-t border-zinc-200">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
+    <!-- About Preview -->
+    <section class="py-20 md:py-28 px-6 max-w-7xl mx-auto border-t border-zinc-200">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <!-- About Image -->
+            <div class="w-full aspect-[4/3] bg-zinc-100 rounded-2xl border border-zinc-200 flex items-center justify-center overflow-hidden">
+                <img src="assets/10.png" alt="Staela Technologies Manufacturing Facility" class="w-full h-full object-cover">
+            </div>
             <div>
                 <div class="text-xs font-medium text-zinc-500 uppercase tracking-widest mb-3">About Us</div>
-                <h2 class="text-3xl md:text-4xl font-medium tracking-tight text-zinc-900 mb-3">Built on Three Decades of Tungsten Carbide Mastery</h2>
-                <p class="text-lg font-medium text-zinc-700 mb-8 leading-relaxed">
-                    Located in Chakan Industrial Area — Pune's premier manufacturing hub.
+                <h2 class="text-3xl md:text-4xl font-medium tracking-tight text-zinc-900 mb-4">30+ Years of Tungsten Carbide Expertise</h2>
+                <p class="text-base font-normal text-zinc-500 leading-relaxed mb-6">
+                    Staela Technologies operates a fully integrated manufacturing facility in Chakan Industrial Area, Pune — equipped with advanced CNC, VMC, and conventional machining capabilities. We design, manufacture, and test finished TC wear parts tailored to your exact requirements.
                 </p>
-                <div class="space-y-4 mb-8">
-                    <p class="text-sm md:text-base font-normal text-zinc-500 leading-relaxed">
-                        Staela Technologies brings 30+ years of Tungsten Carbide expertise to the Oil &amp; Gas industry. Our fully integrated facility in Chakan is equipped with advanced CNC, VMC, and conventional machining capabilities.
-                    </p>
-                    <p class="text-sm md:text-base font-normal text-zinc-500 leading-relaxed">
-                        We design, manufacture, and test finished Tungsten Carbide wear parts tailored to customer-specific requirements — recommending the right carbide grades and optimal tool designs for reliable performance under extreme conditions.
-                    </p>
-                </div>
-                <blockquote class="pl-5 border-l-2 border-zinc-300 mt-8">
-                    <p class="text-base font-medium text-zinc-800 italic leading-relaxed">
-                        "Excellence in oilfield operations begins with knowledge, and we deliver it on every tool we create."
-                    </p>
-                </blockquote>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div class="p-6 bg-white border border-zinc-200 rounded-xl hover:border-zinc-300 transition-colors">
-                    <div class="w-10 h-10 rounded-full bg-zinc-100 flex items-center justify-center mb-5">
-                        <iconify-icon icon="solar:settings-linear" class="text-xl text-zinc-900"></iconify-icon>
-                    </div>
-                    <h3 class="text-sm font-medium tracking-tight text-zinc-900 mb-2">Manufacturing Expertise</h3>
-                    <p class="text-xs font-normal text-zinc-500 leading-relaxed">State-of-the-art CNC, VMC, and conventional machines under one roof for complete production control.</p>
-                </div>
-
-                <div class="p-6 bg-white border border-zinc-200 rounded-xl hover:border-zinc-300 transition-colors">
-                    <div class="w-10 h-10 rounded-full bg-zinc-100 flex items-center justify-center mb-5">
-                        <iconify-icon icon="solar:pen-new-square-linear" class="text-xl text-zinc-900"></iconify-icon>
-                    </div>
-                    <h3 class="text-sm font-medium tracking-tight text-zinc-900 mb-2">Customized Solutions</h3>
-                    <p class="text-xs font-normal text-zinc-500 leading-relaxed">Every product is engineered to match exact drawings, specifications, and application demands.</p>
-                </div>
-
-                <div class="p-6 bg-white border border-zinc-200 rounded-xl hover:border-zinc-300 transition-colors">
-                    <div class="w-10 h-10 rounded-full bg-zinc-100 flex items-center justify-center mb-5">
-                        <iconify-icon icon="solar:clock-circle-linear" class="text-xl text-zinc-900"></iconify-icon>
-                    </div>
-                    <h3 class="text-sm font-medium tracking-tight text-zinc-900 mb-2">Quick Turnaround</h3>
-                    <p class="text-xs font-normal text-zinc-500 leading-relaxed">Rapid quoting, efficient manufacturing, and on-time delivery on every order.</p>
-                </div>
-
-                <div class="p-6 bg-white border border-zinc-200 rounded-xl hover:border-zinc-300 transition-colors">
-                    <div class="w-10 h-10 rounded-full bg-zinc-100 flex items-center justify-center mb-5">
-                        <iconify-icon icon="solar:handshake-linear" class="text-xl text-zinc-900"></iconify-icon>
-                    </div>
-                    <h3 class="text-sm font-medium tracking-tight text-zinc-900 mb-2">Long-Term Partnerships</h3>
-                    <p class="text-xs font-normal text-zinc-500 leading-relaxed">Transparent pricing, consistent quality, and dedicated after-sales support for lasting business relationships.</p>
-                </div>
+                <a href="about.html" class="inline-flex items-center gap-2 text-sm font-medium text-zinc-900 hover:text-[#FFCF01] transition-colors">
+                    Learn More About Us <iconify-icon icon="solar:arrow-right-linear" class="text-lg"></iconify-icon>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Our Mission Banner -->
+    <!-- Mission Banner -->
     <section class="bg-zinc-900 text-zinc-50 py-24 px-6">
         <div class="max-w-5xl mx-auto text-center">
             <div class="text-xs font-medium text-zinc-400 uppercase tracking-widest mb-8">Our Mission</div>
             <p class="text-2xl md:text-4xl lg:text-5xl font-medium tracking-tight text-zinc-500 leading-tight">
-                "To work for <span class="text-white">better solutions on applications</span> for reducing the cost per component with our <span class="text-white">advance technology</span> of Tungsten Carbide Material."
+                "To work for <span class="text-[#FFCF01]">better solutions on applications</span> for reducing the cost per component with our <span class="text-[#FFCF01]">advance technology</span> of Tungsten Carbide Material."
             </p>
         </div>
     </section>
 
+    <!-- Products Preview -->
+    <section class="py-20 md:py-28 px-6 max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row md:items-end md:justify-between mb-12 gap-4">
+            <div>
+                <div class="text-xs font-medium text-zinc-500 uppercase tracking-widest mb-3">Our Products</div>
+                <h2 class="text-3xl md:text-4xl font-medium tracking-tight text-zinc-900">Tungsten Carbide Components</h2>
+            </div>
+            <a href="products.html" class="inline-flex items-center gap-2 text-sm font-medium text-zinc-900 hover:text-[#FFCF01] transition-colors">
+                View All Products <iconify-icon icon="solar:arrow-right-linear" class="text-lg"></iconify-icon>
+            </a>
+        </div>
+
+        <div class="relative">
+            <!-- Left Arrow -->
+            <button id="carousel-prev" class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-10 h-10 rounded-full bg-white border border-zinc-200 shadow-sm flex items-center justify-center hover:bg-zinc-50 transition-colors" aria-label="Previous">
+                <iconify-icon icon="solar:arrow-left-linear" class="text-lg text-zinc-700"></iconify-icon>
+            </button>
+            <!-- Right Arrow -->
+            <button id="carousel-next" class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 w-10 h-10 rounded-full bg-white border border-zinc-200 shadow-sm flex items-center justify-center hover:bg-zinc-50 transition-colors" aria-label="Next">
+                <iconify-icon icon="solar:arrow-right-linear" class="text-lg text-zinc-700"></iconify-icon>
+            </button>
+
+            <div id="carousel-track" class="flex gap-6 overflow-hidden scroll-smooth">
+                <!-- 1. Flow Choke Beans -->
+                <div class="carousel-card w-[85vw] sm:w-[calc((100%-48px)/3)] flex-shrink-0 group border border-zinc-200 rounded-xl bg-white hover:border-zinc-300 transition-all cursor-default flex flex-col overflow-hidden">
+                    <div class="w-full h-48 bg-zinc-100 flex items-center justify-center overflow-hidden">
+                        <img src="assets/1P.png" alt="Flow Choke Beans" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <span class="text-xs font-medium text-zinc-400 mb-2">Flow Control</span>
+                        <h3 class="text-lg font-medium tracking-tight text-zinc-900 mb-2">Flow Choke Beans</h3>
+                        <p class="text-sm font-normal text-zinc-500 leading-relaxed flex-grow">TC-lined choke beans for consistent flow regulation in high-pressure environments.</p>
+                    </div>
+                </div>
+                <!-- 2. Adjustable Choke Stems -->
+                <div class="carousel-card w-[85vw] sm:w-[calc((100%-48px)/3)] flex-shrink-0 group border border-zinc-200 rounded-xl bg-white hover:border-zinc-300 transition-all cursor-default flex flex-col overflow-hidden">
+                    <div class="w-full h-48 bg-zinc-100 flex items-center justify-center overflow-hidden">
+                        <img src="assets/2P.png" alt="Adjustable Choke Stems" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <span class="text-xs font-medium text-zinc-400 mb-2">Flow Control</span>
+                        <h3 class="text-lg font-medium tracking-tight text-zinc-900 mb-2">Adjustable Choke Stems</h3>
+                        <p class="text-sm font-normal text-zinc-500 leading-relaxed flex-grow">High-strength alloy steel stems with brazed TC tips for abrasion and erosion resistance.</p>
+                    </div>
+                </div>
+                <!-- 3. Valve Seats -->
+                <div class="carousel-card w-[85vw] sm:w-[calc((100%-48px)/3)] flex-shrink-0 group border border-zinc-200 rounded-xl bg-white hover:border-zinc-300 transition-all cursor-default flex flex-col overflow-hidden">
+                    <div class="w-full h-48 bg-zinc-100 flex items-center justify-center overflow-hidden">
+                        <img src="assets/3P.png" alt="Valve Seats" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <span class="text-xs font-medium text-zinc-400 mb-2">Flow Control</span>
+                        <h3 class="text-lg font-medium tracking-tight text-zinc-900 mb-2">Valve Seats</h3>
+                        <p class="text-sm font-normal text-zinc-500 leading-relaxed flex-grow">Choke valve seats for leak-proof sealing and long-lasting performance in critical oilfield operations.</p>
+                    </div>
+                </div>
+                <!-- 4. TC Plugs -->
+                <div class="carousel-card w-[85vw] sm:w-[calc((100%-48px)/3)] flex-shrink-0 group border border-zinc-200 rounded-xl bg-white hover:border-zinc-300 transition-all cursor-default flex flex-col overflow-hidden">
+                    <div class="w-full h-48 bg-zinc-100 flex items-center justify-center overflow-hidden">
+                        <img src="assets/4P.png" alt="TC Plugs" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <span class="text-xs font-medium text-zinc-400 mb-2">Wear Components</span>
+                        <h3 class="text-lg font-medium tracking-tight text-zinc-900 mb-2">TC Plugs</h3>
+                        <p class="text-sm font-normal text-zinc-500 leading-relaxed flex-grow">High-precision TC plugs for effective flow control and sealing under extreme conditions.</p>
+                    </div>
+                </div>
+                <!-- 5. Cages -->
+                <div class="carousel-card w-[85vw] sm:w-[calc((100%-48px)/3)] flex-shrink-0 group border border-zinc-200 rounded-xl bg-white hover:border-zinc-300 transition-all cursor-default flex flex-col overflow-hidden">
+                    <div class="w-full h-48 bg-zinc-100 flex items-center justify-center overflow-hidden">
+                        <img src="assets/5P.png" alt="Cages" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <span class="text-xs font-medium text-zinc-400 mb-2">Wear Components</span>
+                        <h3 class="text-lg font-medium tracking-tight text-zinc-900 mb-2">Cages</h3>
+                        <p class="text-sm font-normal text-zinc-500 leading-relaxed flex-grow">Designed for controlled flow, pressure management, and wear resistance in downhole environments.</p>
+                    </div>
+                </div>
+                <!-- 6. Gate Valve Parts -->
+                <div class="carousel-card w-[85vw] sm:w-[calc((100%-48px)/3)] flex-shrink-0 group border border-zinc-200 rounded-xl bg-white hover:border-zinc-300 transition-all cursor-default flex flex-col overflow-hidden">
+                    <div class="w-full h-48 bg-zinc-100 flex items-center justify-center overflow-hidden">
+                        <img src="assets/6P.png" alt="Gate Valve Parts" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <span class="text-xs font-medium text-zinc-400 mb-2">Wear Components</span>
+                        <h3 class="text-lg font-medium tracking-tight text-zinc-900 mb-2">Gate Valve Parts</h3>
+                        <p class="text-sm font-normal text-zinc-500 leading-relaxed flex-grow">TC gate valve components built for continuous high-pressure cycling and abrasive media.</p>
+                    </div>
+                </div>
+                <!-- 7. TC Balls -->
+                <div class="carousel-card w-[85vw] sm:w-[calc((100%-48px)/3)] flex-shrink-0 group border border-zinc-200 rounded-xl bg-white hover:border-zinc-300 transition-all cursor-default flex flex-col overflow-hidden">
+                    <div class="w-full h-48 bg-zinc-100 flex items-center justify-center overflow-hidden">
+                        <img src="assets/7P.png" alt="TC Balls" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <span class="text-xs font-medium text-zinc-400 mb-2">Gas Lift Valve</span>
+                        <h3 class="text-lg font-medium tracking-tight text-zinc-900 mb-2">TC Balls</h3>
+                        <p class="text-sm font-normal text-zinc-500 leading-relaxed flex-grow">TC balls with high hardness and corrosion resistance. Polished within 5-micron tolerance.</p>
+                    </div>
+                </div>
+                <!-- 8. TC Seats -->
+                <div class="carousel-card w-[85vw] sm:w-[calc((100%-48px)/3)] flex-shrink-0 group border border-zinc-200 rounded-xl bg-white hover:border-zinc-300 transition-all cursor-default flex flex-col overflow-hidden">
+                    <div class="w-full h-48 bg-zinc-100 flex items-center justify-center overflow-hidden">
+                        <img src="assets/8P.png" alt="TC Seats" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <span class="text-xs font-medium text-zinc-400 mb-2">Gas Lift Valve</span>
+                        <h3 class="text-lg font-medium tracking-tight text-zinc-900 mb-2">TC Seats</h3>
+                        <p class="text-sm font-normal text-zinc-500 leading-relaxed flex-grow">Precision-finished TC seats for smooth operation and reliable sealing in gas lift applications.</p>
+                    </div>
+                </div>
+                <!-- 9. Custom Components -->
+                <div class="carousel-card w-[85vw] sm:w-[calc((100%-48px)/3)] flex-shrink-0 group border border-zinc-200 rounded-xl bg-white hover:border-zinc-300 transition-all cursor-default flex flex-col overflow-hidden">
+                    <div class="w-full h-48 bg-zinc-100 flex items-center justify-center overflow-hidden">
+                        <img src="assets/9P.png" alt="Custom Components" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <span class="text-xs font-medium text-zinc-400 mb-2">Custom</span>
+                        <h3 class="text-lg font-medium tracking-tight text-zinc-900 mb-2">Custom Components</h3>
+                        <p class="text-sm font-normal text-zinc-500 leading-relaxed flex-grow">Bespoke TC parts designed and manufactured to exact specifications with full engineering support.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Material Excellence -->
-    <section class="py-24 md:py-32 bg-white border-b border-zinc-200 px-6">
+    <section class="py-20 md:py-28 bg-white border-y border-zinc-200 px-6">
         <div class="max-w-7xl mx-auto">
             <div class="max-w-2xl mb-16">
-                <h2 class="text-3xl md:text-4xl font-medium tracking-tight text-zinc-900 mb-4">Material Excellence: Why Tungsten Carbide?</h2>
+                <h2 class="text-3xl md:text-4xl font-medium tracking-tight text-zinc-900 mb-4">Why Tungsten Carbide?</h2>
                 <p class="text-base font-normal text-zinc-500 leading-relaxed">
                     The Oil &amp; Gas industry operates in unforgiving conditions. Tungsten Carbide is the definitive material choice to combat severe abrasion, corrosion, and high-pressure environments.
                 </p>
@@ -167,193 +247,27 @@
         </div>
     </section>
 
-    <!-- Products -->
-    <section id="products" class="py-24 md:py-32 px-6 max-w-7xl mx-auto">
-        <div class="mb-20">
-            <div class="text-xs font-medium text-zinc-500 uppercase tracking-widest mb-3">Our Products</div>
-            <h2 class="text-3xl md:text-4xl font-medium tracking-tight text-zinc-900 mb-4">Tungsten Carbide Components for Oil &amp; Gas Applications</h2>
-            <p class="text-base font-normal text-zinc-500 max-w-3xl leading-relaxed">
-                Precision-manufactured flow control parts designed for durability, efficiency, and peak performance in demanding petroleum environments.
-            </p>
-        </div>
-
-        <!-- CATEGORY 01 -->
-        <div class="mb-24">
-            <div class="flex items-baseline gap-4 mb-8 border-b border-zinc-200 pb-4">
-                <span class="text-sm font-medium text-zinc-400">01</span>
-                <h3 class="text-2xl font-medium tracking-tight text-zinc-900">Flow Control Components</h3>
+    <!-- Quality Preview -->
+    <section class="py-20 md:py-28 px-6 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div>
+                <div class="text-xs font-medium text-zinc-500 uppercase tracking-widest mb-3">Quality Control</div>
+                <h2 class="text-3xl md:text-4xl font-medium tracking-tight text-zinc-900 mb-4">Uncompromising Tolerances</h2>
+                <p class="text-base font-normal text-zinc-500 leading-relaxed mb-6">
+                    A dimensional variance of a few microns can lead to catastrophic failure. Our quality assurance protocol is embedded at every stage — from advanced CMM inspection to full batch traceability.
+                </p>
+                <a href="quality.html" class="inline-flex items-center gap-2 text-sm font-medium text-zinc-900 hover:text-[#FFCF01] transition-colors">
+                    Learn About Our QC Process <iconify-icon icon="solar:arrow-right-linear" class="text-lg"></iconify-icon>
+                </a>
             </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="group border border-zinc-200 rounded-xl bg-white hover:border-zinc-300 transition-all cursor-default flex flex-col h-full overflow-hidden">
-                    <div class="w-full h-48 bg-zinc-100 flex items-center justify-center">
-                        <iconify-icon icon="solar:pipette-linear" class="text-4xl text-zinc-300"></iconify-icon>
-                    </div>
-                    <div class="p-8 flex flex-col flex-grow">
-                        <h4 class="text-lg font-medium tracking-tight text-zinc-900 mb-3">Flow Choke Beans</h4>
-                        <p class="text-sm font-normal text-zinc-500 leading-relaxed mb-6 flex-grow">
-                            TC-lined choke beans for consistent flow regulation in high-pressure environments. Steel housings with TC inserts resist corrosive, erosive, and abrasive wear.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mt-auto pt-4">
-                            <span class="inline-flex items-center px-2.5 py-1 rounded-md bg-zinc-50 border border-zinc-200 text-xs font-medium text-zinc-600">Sizes 4/64" to 128/64"</span>
-                            <span class="inline-flex items-center px-2.5 py-1 rounded-md bg-zinc-50 border border-zinc-200 text-xs font-medium text-zinc-600">High-Pressure Rated</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="group border border-zinc-200 rounded-xl bg-white hover:border-zinc-300 transition-all cursor-default flex flex-col h-full overflow-hidden">
-                    <div class="w-full h-48 bg-zinc-100 flex items-center justify-center">
-                        <iconify-icon icon="solar:tuning-square-2-linear" class="text-4xl text-zinc-300"></iconify-icon>
-                    </div>
-                    <div class="p-8 flex flex-col flex-grow">
-                        <h4 class="text-lg font-medium tracking-tight text-zinc-900 mb-3">Adjustable Choke Stems</h4>
-                        <p class="text-sm font-normal text-zinc-500 leading-relaxed mb-6 flex-grow">
-                            High-strength alloy steel stems with brazed TC tips for abrasion resistance, erosion resistance, and reliable serviceability.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mt-auto pt-4">
-                            <span class="inline-flex items-center px-2.5 py-1 rounded-md bg-zinc-50 border border-zinc-200 text-xs font-medium text-zinc-600">Custom Designs</span>
-                            <span class="inline-flex items-center px-2.5 py-1 rounded-md bg-zinc-50 border border-zinc-200 text-xs font-medium text-zinc-600">Brazed TC Tips</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="group border border-zinc-200 rounded-xl bg-white hover:border-zinc-300 transition-all cursor-default flex flex-col h-full overflow-hidden">
-                    <div class="w-full h-48 bg-zinc-100 flex items-center justify-center">
-                        <iconify-icon icon="solar:record-circle-linear" class="text-4xl text-zinc-300"></iconify-icon>
-                    </div>
-                    <div class="p-8 flex flex-col flex-grow">
-                        <h4 class="text-lg font-medium tracking-tight text-zinc-900 mb-3">Valve Seats</h4>
-                        <p class="text-sm font-normal text-zinc-500 leading-relaxed mb-6 flex-grow">
-                            Choke valve seats for leak-proof sealing and long-lasting performance in critical oilfield operations. Standard and custom configurations available.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mt-auto pt-4">
-                            <span class="inline-flex items-center px-2.5 py-1 rounded-md bg-zinc-50 border border-zinc-200 text-xs font-medium text-zinc-600">3/4", 1", 2" Sizes</span>
-                            <span class="inline-flex items-center px-2.5 py-1 rounded-md bg-zinc-50 border border-zinc-200 text-xs font-medium text-zinc-600">Leak-Proof Sealing</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- CATEGORY 02 -->
-        <div class="mb-24">
-            <div class="flex items-baseline gap-4 mb-8 border-b border-zinc-200 pb-4">
-                <span class="text-sm font-medium text-zinc-400">02</span>
-                <h3 class="text-2xl font-medium tracking-tight text-zinc-900">Precision Wear Components</h3>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="group border border-zinc-200 rounded-xl bg-white hover:border-zinc-300 transition-all cursor-default flex flex-col h-full overflow-hidden">
-                    <div class="w-full h-48 bg-zinc-100 flex items-center justify-center">
-                        <iconify-icon icon="solar:target-linear" class="text-4xl text-zinc-300"></iconify-icon>
-                    </div>
-                    <div class="p-8 flex flex-col flex-grow">
-                        <h4 class="text-lg font-medium tracking-tight text-zinc-900 mb-3">TC Plugs</h4>
-                        <p class="text-sm font-normal text-zinc-500 leading-relaxed mb-6 flex-grow">
-                            High-precision TC plugs for effective flow control and sealing under extreme conditions. Manufactured to tight tolerances for dependable field performance.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mt-auto pt-4">
-                            <span class="inline-flex items-center px-2.5 py-1 rounded-md bg-zinc-50 border border-zinc-200 text-xs font-medium text-zinc-600">High Precision</span>
-                            <span class="inline-flex items-center px-2.5 py-1 rounded-md bg-zinc-50 border border-zinc-200 text-xs font-medium text-zinc-600">Custom Specs</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="group border border-zinc-200 rounded-xl bg-white hover:border-zinc-300 transition-all cursor-default flex flex-col h-full overflow-hidden">
-                    <div class="w-full h-48 bg-zinc-100 flex items-center justify-center">
-                        <iconify-icon icon="solar:archive-minimalistic-linear" class="text-4xl text-zinc-300"></iconify-icon>
-                    </div>
-                    <div class="p-8 flex flex-col flex-grow">
-                        <h4 class="text-lg font-medium tracking-tight text-zinc-900 mb-3">Cages</h4>
-                        <p class="text-sm font-normal text-zinc-500 leading-relaxed mb-6 flex-grow">
-                            Designed for controlled flow, pressure management, and wear resistance in demanding downhole completion environments.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mt-auto pt-4">
-                            <span class="inline-flex items-center px-2.5 py-1 rounded-md bg-zinc-50 border border-zinc-200 text-xs font-medium text-zinc-600">Flow Control</span>
-                            <span class="inline-flex items-center px-2.5 py-1 rounded-md bg-zinc-50 border border-zinc-200 text-xs font-medium text-zinc-600">Pressure Rated</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="group border border-zinc-200 rounded-xl bg-white hover:border-zinc-300 transition-all cursor-default flex flex-col h-full overflow-hidden">
-                    <div class="w-full h-48 bg-zinc-100 flex items-center justify-center">
-                        <iconify-icon icon="solar:waterdrop-linear" class="text-4xl text-zinc-300"></iconify-icon>
-                    </div>
-                    <div class="p-8 flex flex-col flex-grow">
-                        <h4 class="text-lg font-medium tracking-tight text-zinc-900 mb-3">Gate Valve Parts</h4>
-                        <p class="text-sm font-normal text-zinc-500 leading-relaxed mb-6 flex-grow">
-                            TC gate valve components built for continuous high-pressure cycling and abrasive media in critical oilfield operations.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mt-auto pt-4">
-                            <span class="inline-flex items-center px-2.5 py-1 rounded-md bg-zinc-50 border border-zinc-200 text-xs font-medium text-zinc-600">Heavy Duty</span>
-                            <span class="inline-flex items-center px-2.5 py-1 rounded-md bg-zinc-50 border border-zinc-200 text-xs font-medium text-zinc-600">Abrasion Resistant</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- CATEGORY 03 -->
-        <div>
-            <div class="flex items-baseline gap-4 mb-8 border-b border-zinc-200 pb-4">
-                <span class="text-sm font-medium text-zinc-400">03</span>
-                <h3 class="text-2xl font-medium tracking-tight text-zinc-900">Gas Lift Valve Components</h3>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="group border border-zinc-200 rounded-xl bg-white hover:border-zinc-300 transition-all cursor-default flex flex-col h-full overflow-hidden">
-                    <div class="w-full h-48 bg-zinc-100 flex items-center justify-center">
-                        <iconify-icon icon="solar:record-linear" class="text-4xl text-zinc-300"></iconify-icon>
-                    </div>
-                    <div class="p-8 flex flex-col flex-grow">
-                        <h4 class="text-lg font-medium tracking-tight text-zinc-900 mb-3">TC Balls</h4>
-                        <p class="text-sm font-normal text-zinc-500 leading-relaxed mb-6 flex-grow">
-                            TC balls with high hardness, toughness, and corrosion resistance for Gas Lift Valve assemblies. Polished surfaces within 5-micron tolerance.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mt-auto pt-4">
-                            <span class="inline-flex items-center px-2.5 py-1 rounded-md bg-zinc-50 border border-zinc-200 text-xs font-medium text-zinc-600">5μm Tolerance</span>
-                            <span class="inline-flex items-center px-2.5 py-1 rounded-md bg-zinc-50 border border-zinc-200 text-xs font-medium text-zinc-600">Polished Finish</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="group border border-zinc-200 rounded-xl bg-white hover:border-zinc-300 transition-all cursor-default flex flex-col h-full overflow-hidden">
-                    <div class="w-full h-48 bg-zinc-100 flex items-center justify-center">
-                        <iconify-icon icon="solar:layers-linear" class="text-4xl text-zinc-300"></iconify-icon>
-                    </div>
-                    <div class="p-8 flex flex-col flex-grow">
-                        <h4 class="text-lg font-medium tracking-tight text-zinc-900 mb-3">TC Seats</h4>
-                        <p class="text-sm font-normal text-zinc-500 leading-relaxed mb-6 flex-grow">
-                            Precision-finished TC seats manufactured to exact drawings for smooth operation, reliable sealing, and extended tool life in gas lift applications.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mt-auto pt-4">
-                            <span class="inline-flex items-center px-2.5 py-1 rounded-md bg-zinc-50 border border-zinc-200 text-xs font-medium text-zinc-600">As-Per-Drawing</span>
-                            <span class="inline-flex items-center px-2.5 py-1 rounded-md bg-zinc-50 border border-zinc-200 text-xs font-medium text-zinc-600">Extended Life</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="group border border-zinc-200 rounded-xl bg-white hover:border-zinc-300 transition-all cursor-default flex flex-col h-full overflow-hidden">
-                    <div class="w-full h-48 bg-zinc-100 flex items-center justify-center">
-                        <iconify-icon icon="solar:ruler-cross-pen-linear" class="text-4xl text-zinc-300"></iconify-icon>
-                    </div>
-                    <div class="p-8 flex flex-col flex-grow">
-                        <h4 class="text-lg font-medium tracking-tight text-zinc-900 mb-3">Custom Components</h4>
-                        <p class="text-sm font-normal text-zinc-500 leading-relaxed mb-6 flex-grow">
-                            Bespoke TC parts designed and manufactured to exact specifications. Engineering team collaborates from concept through production.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mt-auto pt-4">
-                            <span class="inline-flex items-center px-2.5 py-1 rounded-md bg-zinc-50 border border-zinc-200 text-xs font-medium text-zinc-600">Fully Custom</span>
-                            <span class="inline-flex items-center px-2.5 py-1 rounded-md bg-zinc-50 border border-zinc-200 text-xs font-medium text-zinc-600">Engineering Support</span>
-                        </div>
-                    </div>
-                </div>
+            <div class="w-full aspect-[4/3] bg-zinc-100 rounded-2xl border border-zinc-200 flex items-center justify-center overflow-hidden">
+                <img src="assets/13.png" alt="Quality Inspection Laboratory" class="w-full h-full object-cover">
             </div>
         </div>
     </section>
 
     <!-- The Staela Advantage -->
-    <section class="py-24 md:py-32 bg-zinc-900 text-zinc-50 px-6">
+    <section class="py-20 md:py-28 bg-zinc-900 text-zinc-50 px-6">
         <div class="max-w-7xl mx-auto">
             <h2 class="text-3xl md:text-4xl font-medium tracking-tight text-white mb-16 text-center">The Staela Advantage</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
@@ -381,174 +295,88 @@
         </div>
     </section>
 
-    <!-- Quality Control -->
-    <section id="quality" class="py-24 md:py-32 px-6 max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
-        <div class="w-full md:w-1/2 aspect-square md:aspect-[4/3] bg-zinc-100 rounded-2xl border border-zinc-200 flex items-center justify-center relative overflow-hidden">
-            <div class="absolute inset-0 bg-[linear-gradient(to_right,#e5e7eb_1px,transparent_1px),linear-gradient(to_bottom,#e5e7eb_1px,transparent_1px)] bg-[size:2rem_2rem] [mask-image:radial-gradient(ellipse_60%_60%_at_50%_50%,#000_70%,transparent_100%)]"></div>
-            <div class="z-10 text-center">
-                <iconify-icon icon="solar:scanner-linear" class="text-5xl text-zinc-300 mb-4"></iconify-icon>
-                <div class="text-xs font-medium text-zinc-400 uppercase tracking-widest">Inspection Ready</div>
-            </div>
-        </div>
-        <div class="w-full md:w-1/2">
-            <h2 class="text-3xl md:text-4xl font-medium tracking-tight text-zinc-900 mb-6">Uncompromising Tolerances</h2>
-            <p class="text-base font-normal text-zinc-500 leading-relaxed mb-6">
-                In the petroleum sector, a dimensional variance of a few microns can lead to catastrophic failure. Our quality assurance protocol is embedded at every stage of the manufacturing cycle.
-            </p>
-            <ul class="space-y-4 mb-8">
-                <li class="flex items-start gap-3">
-                    <iconify-icon icon="solar:check-circle-linear" class="text-lg text-zinc-900 mt-0.5"></iconify-icon>
-                    <span class="text-sm font-normal text-zinc-600">Advanced metrology lab with CMM and optical inspection.</span>
-                </li>
-                <li class="flex items-start gap-3">
-                    <iconify-icon icon="solar:check-circle-linear" class="text-lg text-zinc-900 mt-0.5"></iconify-icon>
-                    <span class="text-sm font-normal text-zinc-600">Metallurgical testing for hardness, density, and microstructure.</span>
-                </li>
-                <li class="flex items-start gap-3">
-                    <iconify-icon icon="solar:check-circle-linear" class="text-lg text-zinc-900 mt-0.5"></iconify-icon>
-                    <span class="text-sm font-normal text-zinc-600">100% dimensional inspection on critical interface geometries.</span>
-                </li>
-                <li class="flex items-start gap-3">
-                    <iconify-icon icon="solar:check-circle-linear" class="text-lg text-zinc-900 mt-0.5"></iconify-icon>
-                    <span class="text-sm font-normal text-zinc-600">Standardized QMS documentation and batch traceability for every order.</span>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Contact Us -->
-    <section id="contact" class="py-24 md:py-32 px-6 bg-white border-t border-zinc-200">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-5 gap-16">
-            <div class="lg:col-span-2">
-                <h2 class="text-3xl md:text-4xl font-medium tracking-tight text-zinc-900 mb-4">Initiate a Project</h2>
-                <p class="text-base font-normal text-zinc-500 leading-relaxed mb-10">
-                    Connect with our technical sales team to discuss drawings, material specifications, and production timelines.
-                </p>
-
-                <div class="space-y-6">
-                    <div class="flex items-start gap-4">
-                        <iconify-icon icon="solar:map-point-linear" class="text-xl text-zinc-400 mt-1"></iconify-icon>
-                        <div>
-                            <h4 class="text-sm font-medium text-zinc-900 mb-1">Address</h4>
-                            <p class="text-sm font-normal text-zinc-500 leading-relaxed">
-                                Gat no. 357/75 plot 2, Waghjai nagar,<br>
-                                Kharabwadi, Chakan, Pune 410501.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <iconify-icon icon="solar:phone-linear" class="text-xl text-zinc-400"></iconify-icon>
-                        <p class="text-sm font-normal text-zinc-500">+91 99207 21076</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <iconify-icon icon="solar:global-linear" class="text-xl text-zinc-400"></iconify-icon>
-                        <p class="text-sm font-normal text-zinc-500">www.staelatechnologies.com</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <iconify-icon icon="solar:letter-linear" class="text-xl text-zinc-400"></iconify-icon>
-                        <p class="text-sm font-normal text-zinc-500">rfq@staelatechnologies.com</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <iconify-icon icon="solar:document-text-linear" class="text-xl text-zinc-400"></iconify-icon>
-                        <p class="text-sm font-normal text-zinc-500">GSTIN 27AKPPK4690M1ZC</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="lg:col-span-3">
-                <form class="bg-zinc-50 p-8 rounded-2xl border border-zinc-200">
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
-                        <div>
-                            <label class="block text-xs font-medium text-zinc-700 mb-2 uppercase tracking-wide">Full Name</label>
-                            <input type="text" class="w-full bg-white border border-zinc-200 rounded-md px-4 py-2.5 text-sm text-zinc-900 focus:outline-none focus:border-zinc-400 focus:ring-1 focus:ring-zinc-400 placeholder:text-zinc-400" placeholder="Jane Doe">
-                        </div>
-                        <div>
-                            <label class="block text-xs font-medium text-zinc-700 mb-2 uppercase tracking-wide">Company</label>
-                            <input type="text" class="w-full bg-white border border-zinc-200 rounded-md px-4 py-2.5 text-sm text-zinc-900 focus:outline-none focus:border-zinc-400 focus:ring-1 focus:ring-zinc-400 placeholder:text-zinc-400" placeholder="Energy Corp Inc.">
-                        </div>
-                    </div>
-                    <div class="mb-6">
-                        <label class="block text-xs font-medium text-zinc-700 mb-2 uppercase tracking-wide">Email Address</label>
-                        <input type="email" class="w-full bg-white border border-zinc-200 rounded-md px-4 py-2.5 text-sm text-zinc-900 focus:outline-none focus:border-zinc-400 focus:ring-1 focus:ring-zinc-400 placeholder:text-zinc-400" placeholder="jane@energycorp.com">
-                    </div>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
-                        <div>
-                            <label class="block text-xs font-medium text-zinc-700 mb-2 uppercase tracking-wide">Mobile Number</label>
-                            <input type="tel" class="w-full bg-white border border-zinc-200 rounded-md px-4 py-2.5 text-sm text-zinc-900 focus:outline-none focus:border-zinc-400 focus:ring-1 focus:ring-zinc-400 placeholder:text-zinc-400" placeholder="+91 98765 43210">
-                        </div>
-                        <div>
-                            <label class="block text-xs font-medium text-zinc-700 mb-2 uppercase tracking-wide">Landline Number</label>
-                            <input type="tel" class="w-full bg-white border border-zinc-200 rounded-md px-4 py-2.5 text-sm text-zinc-900 focus:outline-none focus:border-zinc-400 focus:ring-1 focus:ring-zinc-400 placeholder:text-zinc-400" placeholder="+91 20 1234 5678">
-                        </div>
-                    </div>
-                    <div class="mb-6">
-                        <label class="block text-xs font-medium text-zinc-700 mb-2 uppercase tracking-wide">Product Required</label>
-                        <select class="w-full bg-white border border-zinc-200 rounded-md px-4 py-2.5 text-sm text-zinc-900 focus:outline-none focus:border-zinc-400 focus:ring-1 focus:ring-zinc-400">
-                            <option value="" class="text-zinc-400">Select a product category</option>
-                            <option value="flow-choke-beans">Flow Choke Beans</option>
-                            <option value="adjustable-choke-stems">Adjustable Choke Stems</option>
-                            <option value="valve-seats">Valve Seats</option>
-                            <option value="tc-plugs">TC Plugs</option>
-                            <option value="cages">Cages</option>
-                            <option value="gate-valve-parts">Gate Valve Parts</option>
-                            <option value="tc-balls">TC Balls</option>
-                            <option value="tc-seats">TC Seats</option>
-                            <option value="custom-components">Custom Components</option>
-                        </select>
-                    </div>
-                    <div class="mb-6">
-                        <label class="block text-xs font-medium text-zinc-700 mb-2 uppercase tracking-wide">Application</label>
-                        <input type="text" class="w-full bg-white border border-zinc-200 rounded-md px-4 py-2.5 text-sm text-zinc-900 focus:outline-none focus:border-zinc-400 focus:ring-1 focus:ring-zinc-400 placeholder:text-zinc-400" placeholder="Where will the tool be used?">
-                    </div>
-                    <div class="mb-6">
-                        <label class="block text-xs font-medium text-zinc-700 mb-2 uppercase tracking-wide">Quantity Required</label>
-                        <input type="text" class="w-full bg-white border border-zinc-200 rounded-md px-4 py-2.5 text-sm text-zinc-900 focus:outline-none focus:border-zinc-400 focus:ring-1 focus:ring-zinc-400 placeholder:text-zinc-400" placeholder="Estimated quantity">
-                    </div>
-                    <div class="mb-6">
-                        <label class="block text-xs font-medium text-zinc-700 mb-2 uppercase tracking-wide">Engineering Drawing</label>
-                        <label class="flex flex-col items-center justify-center w-full h-24 border-2 border-zinc-200 border-dashed rounded-lg cursor-pointer bg-white hover:bg-zinc-50 transition-colors">
-                            <div class="flex flex-col items-center justify-center pt-2 pb-2">
-                                <iconify-icon icon="solar:upload-linear" class="text-2xl text-zinc-400 mb-1"></iconify-icon>
-                                <p class="text-xs text-zinc-500">Click to upload drawing (PDF, DWG, DXF, STEP)</p>
-                            </div>
-                            <input type="file" class="hidden" accept=".pdf,.dwg,.dxf,.step,.stp,.iges,.igs">
-                        </label>
-                    </div>
-                    <div class="mb-8">
-                        <label class="block text-xs font-medium text-zinc-700 mb-2 uppercase tracking-wide">Project Details / RFQ</label>
-                        <textarea rows="4" class="w-full bg-white border border-zinc-200 rounded-md px-4 py-2.5 text-sm text-zinc-900 focus:outline-none focus:border-zinc-400 focus:ring-1 focus:ring-zinc-400 placeholder:text-zinc-400 resize-none" placeholder="Describe the application, required tolerances, and any additional details..."></textarea>
-                    </div>
-                    <button type="button" class="w-full px-6 py-3 bg-zinc-900 text-white text-sm font-medium rounded-md hover:bg-zinc-800 transition-colors flex items-center justify-center gap-2">
-                        Submit Enquiry <iconify-icon icon="solar:plain-2-linear" class="text-lg"></iconify-icon>
-                    </button>
-                </form>
-            </div>
-        </div>
+    <!-- Contact CTA -->
+    <section class="py-20 md:py-28 px-6 max-w-7xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-medium tracking-tight text-zinc-900 mb-4">Ready to Get Started?</h2>
+        <p class="text-base font-normal text-zinc-500 max-w-xl mx-auto mb-8 leading-relaxed">
+            Share your drawings and specifications with our technical team. We'll get back to you with a detailed quote.
+        </p>
+        <a href="contact.html" class="inline-flex px-8 py-3 bg-zinc-900 text-white text-sm font-medium rounded-md hover:bg-[#FFCF01] hover:text-zinc-900 transition-colors">
+            Get a Quote
+        </a>
     </section>
 
     <!-- Footer -->
     <footer class="bg-zinc-50 border-t border-zinc-200 py-8 px-6">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-            <p class="text-xs font-medium tracking-tighter text-zinc-900">STAELA</p>
+            <img src="assets/staela full logo.svg" alt="Staela Technologies" class="h-6 w-auto">
+            <nav class="flex items-center gap-6">
+                <a href="index.html" class="text-xs text-zinc-400 hover:text-zinc-600 transition-colors">Home</a>
+                <a href="about.html" class="text-xs text-zinc-400 hover:text-zinc-600 transition-colors">About</a>
+                <a href="products.html" class="text-xs text-zinc-400 hover:text-zinc-600 transition-colors">Products</a>
+                <a href="quality.html" class="text-xs text-zinc-400 hover:text-zinc-600 transition-colors">Quality</a>
+                <a href="contact.html" class="text-xs text-zinc-400 hover:text-zinc-600 transition-colors">Contact</a>
+            </nav>
             <p class="text-xs font-normal text-zinc-400">&copy; 2026 Staela Technologies. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- Mobile Menu Toggle -->
     <script>
         const menuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', function() { mobileMenu.classList.toggle('hidden'); });
+        mobileMenu.querySelectorAll('a').forEach(function(link) { link.addEventListener('click', function() { mobileMenu.classList.add('hidden'); }); });
 
-        menuBtn.addEventListener('click', function() {
-            mobileMenu.classList.toggle('hidden');
-        });
+        // Carousel
+        (function() {
+            var track = document.getElementById('carousel-track');
+            var prevBtn = document.getElementById('carousel-prev');
+            var nextBtn = document.getElementById('carousel-next');
+            var cards = track.querySelectorAll('.carousel-card');
+            var cardCount = cards.length;
 
-        // Close menu when a link is clicked
-        mobileMenu.querySelectorAll('a').forEach(function(link) {
-            link.addEventListener('click', function() {
-                mobileMenu.classList.add('hidden');
+            // Clone all cards and append for infinite scroll
+            cards.forEach(function(card) {
+                track.appendChild(card.cloneNode(true));
             });
-        });
+
+            function getCardWidth() {
+                var card = track.querySelector('.carousel-card');
+                var style = window.getComputedStyle(card);
+                return card.offsetWidth + parseInt(style.marginRight || 0) + 24; // 24 = gap-6
+            }
+
+            function getSetWidth() {
+                return getCardWidth() * cardCount;
+            }
+
+            // Scroll by one card
+            nextBtn.addEventListener('click', function() {
+                track.scrollBy({ left: getCardWidth(), behavior: 'smooth' });
+            });
+
+            prevBtn.addEventListener('click', function() {
+                track.scrollBy({ left: -getCardWidth(), behavior: 'smooth' });
+            });
+
+            // Infinite loop: when scroll reaches cloned set, jump back
+            var scrollTimeout;
+            track.addEventListener('scroll', function() {
+                clearTimeout(scrollTimeout);
+                scrollTimeout = setTimeout(function() {
+                    var setW = getSetWidth();
+                    if (track.scrollLeft >= setW) {
+                        track.style.scrollBehavior = 'auto';
+                        track.scrollLeft = track.scrollLeft - setW;
+                        track.style.scrollBehavior = 'smooth';
+                    } else if (track.scrollLeft <= 0) {
+                        track.style.scrollBehavior = 'auto';
+                        track.scrollLeft = track.scrollLeft + setW;
+                        track.style.scrollBehavior = 'smooth';
+                    }
+                }, 100);
+            });
+        })();
     </script>
 
 </body>
