@@ -48,7 +48,7 @@
             <div>
                 <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-zinc-200 bg-white mb-8">
                     <span class="w-2 h-2 rounded-full bg-[#FFCF01]"></span>
-                    <span class="text-xs font-medium text-zinc-600 uppercase tracking-widest">Specializing in Oil &amp; Gas Industry</span>
+                    <span class="text-xs font-medium text-zinc-600 uppercase tracking-widest">Engineered for Extreme Environments</span>
                 </div>
                 <h1 class="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight text-zinc-900 mb-6 leading-tight">
                     <span class="whitespace-nowrap">Precision Tungsten Carbide</span><br>Wear Parts
@@ -65,21 +65,34 @@
                     </a>
                 </div>
             </div>
-            <!-- Right: 3D Model -->
-            <div class="w-full aspect-square flex items-center justify-center">
-                <model-viewer
-                    src="assets/products 3d model.glb"
-                    alt="Tungsten Carbide Components 3D Model"
-                    auto-rotate
-                    auto-rotate-delay="0"
-                    rotation-per-second="15deg"
-                    camera-controls
-                    touch-action="pan-y"
-                    disable-zoom
-                    shadow-intensity="0.3"
-                    exposure="1"
-                    style="width: 100%; height: 100%; --poster-color: transparent;"
-                ></model-viewer>
+            <!-- Right: Product Visual (right-click to toggle) -->
+            <div id="hero-visual" class="w-full aspect-square relative">
+                <!-- Static Image (visible by default) -->
+                <div id="hero-image" class="w-full h-full flex items-center justify-center">
+                    <img src="assets/hero section products asset.png" alt="Tungsten Carbide Components" class="w-full h-full object-contain">
+                </div>
+                <!-- 3D Model (hidden by default) -->
+                <div id="hero-model" class="hidden w-full h-full">
+                    <model-viewer
+                        src="assets/products 3d model.glb"
+                        alt="Tungsten Carbide Components 3D Model"
+                        auto-rotate
+                        auto-rotate-delay="0"
+                        rotation-per-second="15deg"
+                        camera-controls
+                        touch-action="pan-y"
+                        disable-zoom
+                        shadow-intensity="0.3"
+                        exposure="1"
+                        style="width: 100%; height: 100%; --poster-color: transparent;"
+                    ></model-viewer>
+                </div>
+                <!-- Custom context menu -->
+                <div id="hero-context-menu" class="hidden absolute z-20 bg-white border border-zinc-200 rounded-lg shadow-lg py-1 min-w-[180px]">
+                    <button id="hero-switch-btn" class="w-full px-4 py-2 text-left text-sm text-zinc-700 hover:bg-zinc-50 transition-colors">
+                        Switch to 3D Model
+                    </button>
+                </div>
             </div>
         </div>
     </section>
@@ -181,14 +194,14 @@
                         <p class="text-sm font-normal text-zinc-500 leading-relaxed flex-grow">High-precision TC plugs for effective flow control and sealing under extreme conditions.</p>
                     </div>
                 </div>
-                <!-- 5. Cages -->
+                <!-- 5. Cages and Trims -->
                 <div class="carousel-card w-[85vw] sm:w-[calc((100%-48px)/3)] flex-shrink-0 group border border-zinc-200 rounded-xl bg-white hover:border-zinc-300 transition-all cursor-default flex flex-col overflow-hidden">
                     <div class="w-full h-48 bg-zinc-100 flex items-center justify-center overflow-hidden">
-                        <img src="assets/5P.png" alt="Cages" class="w-full h-full object-cover">
+                        <img src="assets/5P.png" alt="Cages and Trims" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
                         <span class="text-xs font-medium text-zinc-400 mb-2">Wear Components</span>
-                        <h3 class="text-lg font-medium tracking-tight text-zinc-900 mb-2">Cages</h3>
+                        <h3 class="text-lg font-medium tracking-tight text-zinc-900 mb-2">Cages and Trims</h3>
                         <p class="text-sm font-normal text-zinc-500 leading-relaxed flex-grow">Designed for controlled flow, pressure management, and wear resistance in downhole environments.</p>
                     </div>
                 </div>
@@ -348,6 +361,54 @@
         const mobileMenu = document.getElementById('mobile-menu');
         menuBtn.addEventListener('click', function() { mobileMenu.classList.toggle('hidden'); });
         mobileMenu.querySelectorAll('a').forEach(function(link) { link.addEventListener('click', function() { mobileMenu.classList.add('hidden'); }); });
+
+        // Hero visual toggle (right-click / long-press)
+        (function() {
+            var visual = document.getElementById('hero-visual');
+            var heroImage = document.getElementById('hero-image');
+            var heroModel = document.getElementById('hero-model');
+            var ctxMenu = document.getElementById('hero-context-menu');
+            var switchBtn = document.getElementById('hero-switch-btn');
+            var longPressTimer;
+
+            function showMenu(x, y) {
+                var rect = visual.getBoundingClientRect();
+                ctxMenu.style.left = (x - rect.left) + 'px';
+                ctxMenu.style.top = (y - rect.top) + 'px';
+                ctxMenu.classList.remove('hidden');
+            }
+
+            function hideMenu() { ctxMenu.classList.add('hidden'); }
+
+            // Right-click on desktop
+            visual.addEventListener('contextmenu', function(e) {
+                e.preventDefault();
+                showMenu(e.clientX, e.clientY);
+            });
+
+            // Long-press on mobile
+            visual.addEventListener('touchstart', function(e) {
+                longPressTimer = setTimeout(function() {
+                    var touch = e.touches[0];
+                    showMenu(touch.clientX, touch.clientY);
+                }, 500);
+            });
+            visual.addEventListener('touchend', function() { clearTimeout(longPressTimer); });
+            visual.addEventListener('touchmove', function() { clearTimeout(longPressTimer); });
+
+            // Toggle
+            switchBtn.addEventListener('click', function() {
+                heroImage.classList.toggle('hidden');
+                heroModel.classList.toggle('hidden');
+                switchBtn.textContent = heroImage.classList.contains('hidden') ? 'Switch to Image' : 'Switch to 3D Model';
+                hideMenu();
+            });
+
+            // Close menu on click elsewhere
+            document.addEventListener('click', function(e) {
+                if (!ctxMenu.contains(e.target)) hideMenu();
+            });
+        })();
 
         // Carousel
         (function() {

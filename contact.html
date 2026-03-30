@@ -81,7 +81,7 @@
                     </div>
                     <div class="flex items-center gap-4">
                         <iconify-icon icon="solar:letter-linear" class="text-xl text-zinc-400"></iconify-icon>
-                        <p class="text-sm font-normal text-zinc-500">rfq@staelatechnologies.com</p>
+                        <p class="text-sm font-normal text-zinc-500">Contact@staelatechnologies.com</p>
                     </div>
                     <div class="flex items-center gap-4">
                         <iconify-icon icon="solar:document-text-linear" class="text-xl text-zinc-400"></iconify-icon>
@@ -99,40 +99,44 @@
             </div>
 
             <div class="lg:col-span-3">
-                <form class="bg-white p-8 rounded-2xl border border-zinc-200">
+                <form action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data" class="bg-white p-8 rounded-2xl border border-zinc-200">
+                    <input type="hidden" name="access_key" value="92e3c0b4-5d1a-498e-aad6-7277beb46776">
+                    <input type="hidden" name="subject" value="New Enquiry - Staela Technologies">
+                    <input type="hidden" name="from_name" value="Staela Technologies Website">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display:none">
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
                         <div>
                             <label class="block text-xs font-medium text-zinc-700 mb-2 uppercase tracking-wide">Full Name</label>
-                            <input type="text" class="w-full bg-zinc-50 border border-zinc-200 rounded-md px-4 py-2.5 text-sm text-zinc-900 focus:outline-none focus:border-[#FFCF01] focus:ring-1 focus:ring-[#FFCF01] placeholder:text-zinc-400" placeholder="Jane Doe">
+                            <input type="text" name="name" required class="w-full bg-zinc-50 border border-zinc-200 rounded-md px-4 py-2.5 text-sm text-zinc-900 focus:outline-none focus:border-[#FFCF01] focus:ring-1 focus:ring-[#FFCF01] placeholder:text-zinc-400" placeholder="Jane Doe">
                         </div>
                         <div>
-                            <label class="block text-xs font-medium text-zinc-700 mb-2 uppercase tracking-wide">Company</label>
-                            <input type="text" class="w-full bg-zinc-50 border border-zinc-200 rounded-md px-4 py-2.5 text-sm text-zinc-900 focus:outline-none focus:border-[#FFCF01] focus:ring-1 focus:ring-[#FFCF01] placeholder:text-zinc-400" placeholder="Energy Corp Inc.">
+                            <label class="block text-xs font-medium text-zinc-700 mb-2 uppercase tracking-wide">Company <span class="text-zinc-400 normal-case tracking-normal">(Optional)</span></label>
+                            <input type="text" name="company" class="w-full bg-zinc-50 border border-zinc-200 rounded-md px-4 py-2.5 text-sm text-zinc-900 focus:outline-none focus:border-[#FFCF01] focus:ring-1 focus:ring-[#FFCF01] placeholder:text-zinc-400" placeholder="Energy Corp Inc.">
                         </div>
                     </div>
                     <div class="mb-6">
                         <label class="block text-xs font-medium text-zinc-700 mb-2 uppercase tracking-wide">Email Address</label>
-                        <input type="email" class="w-full bg-zinc-50 border border-zinc-200 rounded-md px-4 py-2.5 text-sm text-zinc-900 focus:outline-none focus:border-[#FFCF01] focus:ring-1 focus:ring-[#FFCF01] placeholder:text-zinc-400" placeholder="jane@energycorp.com">
+                        <input type="email" name="email" required class="w-full bg-zinc-50 border border-zinc-200 rounded-md px-4 py-2.5 text-sm text-zinc-900 focus:outline-none focus:border-[#FFCF01] focus:ring-1 focus:ring-[#FFCF01] placeholder:text-zinc-400" placeholder="jane@energycorp.com">
                     </div>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
                         <div>
                             <label class="block text-xs font-medium text-zinc-700 mb-2 uppercase tracking-wide">Mobile Number</label>
-                            <input type="tel" class="w-full bg-zinc-50 border border-zinc-200 rounded-md px-4 py-2.5 text-sm text-zinc-900 focus:outline-none focus:border-[#FFCF01] focus:ring-1 focus:ring-[#FFCF01] placeholder:text-zinc-400" placeholder="+91 98765 43210">
+                            <input type="tel" name="mobile" required class="w-full bg-zinc-50 border border-zinc-200 rounded-md px-4 py-2.5 text-sm text-zinc-900 focus:outline-none focus:border-[#FFCF01] focus:ring-1 focus:ring-[#FFCF01] placeholder:text-zinc-400" placeholder="+91 98765 43210">
                         </div>
                         <div>
-                            <label class="block text-xs font-medium text-zinc-700 mb-2 uppercase tracking-wide">Landline Number</label>
-                            <input type="tel" class="w-full bg-zinc-50 border border-zinc-200 rounded-md px-4 py-2.5 text-sm text-zinc-900 focus:outline-none focus:border-[#FFCF01] focus:ring-1 focus:ring-[#FFCF01] placeholder:text-zinc-400" placeholder="+91 20 1234 5678">
+                            <label class="block text-xs font-medium text-zinc-700 mb-2 uppercase tracking-wide">Landline Number <span class="text-zinc-400 normal-case tracking-normal">(Optional)</span></label>
+                            <input type="tel" name="landline" class="w-full bg-zinc-50 border border-zinc-200 rounded-md px-4 py-2.5 text-sm text-zinc-900 focus:outline-none focus:border-[#FFCF01] focus:ring-1 focus:ring-[#FFCF01] placeholder:text-zinc-400" placeholder="+91 20 1234 5678">
                         </div>
                     </div>
                     <div class="mb-6">
-                        <label class="block text-xs font-medium text-zinc-700 mb-2 uppercase tracking-wide">Product Required</label>
-                        <select class="w-full bg-zinc-50 border border-zinc-200 rounded-md px-4 py-2.5 text-sm text-zinc-900 focus:outline-none focus:border-[#FFCF01] focus:ring-1 focus:ring-[#FFCF01]">
+                        <label class="block text-xs font-medium text-zinc-700 mb-2 uppercase tracking-wide">Product Required <span class="text-zinc-400 normal-case tracking-normal">(Optional)</span></label>
+                        <select name="product" class="w-full bg-zinc-50 border border-zinc-200 rounded-md px-4 py-2.5 text-sm text-zinc-900 focus:outline-none focus:border-[#FFCF01] focus:ring-1 focus:ring-[#FFCF01]">
                             <option value="" class="text-zinc-400">Select a product category</option>
                             <option value="flow-choke-beans">Flow Choke Beans</option>
                             <option value="adjustable-choke-stems">Adjustable Choke Stems</option>
                             <option value="valve-seats">Valve Seats</option>
                             <option value="tc-plugs">TC Plugs</option>
-                            <option value="cages">Cages</option>
+                            <option value="cages-and-trims">Cages and Trims</option>
                             <option value="gate-valve-parts">Gate Valve Parts</option>
                             <option value="tc-balls">TC Balls</option>
                             <option value="tc-seats">TC Seats</option>
@@ -140,28 +144,28 @@
                         </select>
                     </div>
                     <div class="mb-6">
-                        <label class="block text-xs font-medium text-zinc-700 mb-2 uppercase tracking-wide">Application</label>
-                        <input type="text" class="w-full bg-zinc-50 border border-zinc-200 rounded-md px-4 py-2.5 text-sm text-zinc-900 focus:outline-none focus:border-[#FFCF01] focus:ring-1 focus:ring-[#FFCF01] placeholder:text-zinc-400" placeholder="Where will the tool be used?">
+                        <label class="block text-xs font-medium text-zinc-700 mb-2 uppercase tracking-wide">Application <span class="text-zinc-400 normal-case tracking-normal">(Optional)</span></label>
+                        <input type="text" name="application" class="w-full bg-zinc-50 border border-zinc-200 rounded-md px-4 py-2.5 text-sm text-zinc-900 focus:outline-none focus:border-[#FFCF01] focus:ring-1 focus:ring-[#FFCF01] placeholder:text-zinc-400" placeholder="Where will the tool be used?">
                     </div>
                     <div class="mb-6">
-                        <label class="block text-xs font-medium text-zinc-700 mb-2 uppercase tracking-wide">Quantity Required</label>
-                        <input type="text" class="w-full bg-zinc-50 border border-zinc-200 rounded-md px-4 py-2.5 text-sm text-zinc-900 focus:outline-none focus:border-[#FFCF01] focus:ring-1 focus:ring-[#FFCF01] placeholder:text-zinc-400" placeholder="Estimated quantity">
+                        <label class="block text-xs font-medium text-zinc-700 mb-2 uppercase tracking-wide">Quantity Required <span class="text-zinc-400 normal-case tracking-normal">(Optional)</span></label>
+                        <input type="text" name="quantity" class="w-full bg-zinc-50 border border-zinc-200 rounded-md px-4 py-2.5 text-sm text-zinc-900 focus:outline-none focus:border-[#FFCF01] focus:ring-1 focus:ring-[#FFCF01] placeholder:text-zinc-400" placeholder="Estimated quantity">
                     </div>
                     <div class="mb-6">
-                        <label class="block text-xs font-medium text-zinc-700 mb-2 uppercase tracking-wide">Engineering Drawing</label>
+                        <label class="block text-xs font-medium text-zinc-700 mb-2 uppercase tracking-wide">Engineering Drawing <span class="text-zinc-400 normal-case tracking-normal">(Optional)</span></label>
                         <label class="flex flex-col items-center justify-center w-full h-24 border-2 border-zinc-200 border-dashed rounded-lg cursor-pointer bg-zinc-50 hover:bg-zinc-100 transition-colors">
                             <div class="flex flex-col items-center justify-center pt-2 pb-2">
                                 <iconify-icon icon="solar:upload-linear" class="text-2xl text-zinc-400 mb-1"></iconify-icon>
                                 <p class="text-xs text-zinc-500">Click to upload drawing (PDF, DWG, DXF, STEP)</p>
                             </div>
-                            <input type="file" class="hidden" accept=".pdf,.dwg,.dxf,.step,.stp,.iges,.igs">
+                            <input type="file" name="drawing" class="hidden" accept=".pdf,.dwg,.dxf,.step,.stp,.iges,.igs">
                         </label>
                     </div>
                     <div class="mb-8">
-                        <label class="block text-xs font-medium text-zinc-700 mb-2 uppercase tracking-wide">Project Details / RFQ</label>
-                        <textarea rows="4" class="w-full bg-zinc-50 border border-zinc-200 rounded-md px-4 py-2.5 text-sm text-zinc-900 focus:outline-none focus:border-[#FFCF01] focus:ring-1 focus:ring-[#FFCF01] placeholder:text-zinc-400 resize-none" placeholder="Describe the application, required tolerances, and any additional details..."></textarea>
+                        <label class="block text-xs font-medium text-zinc-700 mb-2 uppercase tracking-wide">Project Details / RFQ <span class="text-zinc-400 normal-case tracking-normal">(Optional)</span></label>
+                        <textarea name="details" rows="4" class="w-full bg-zinc-50 border border-zinc-200 rounded-md px-4 py-2.5 text-sm text-zinc-900 focus:outline-none focus:border-[#FFCF01] focus:ring-1 focus:ring-[#FFCF01] placeholder:text-zinc-400 resize-none" placeholder="Describe the application, required tolerances, and any additional details..."></textarea>
                     </div>
-                    <button type="button" class="w-full px-6 py-3 bg-zinc-900 text-white text-sm font-medium rounded-md hover:bg-[#FFCF01] hover:text-zinc-900 transition-colors flex items-center justify-center gap-2">
+                    <button type="submit" class="w-full px-6 py-3 bg-zinc-900 text-white text-sm font-medium rounded-md hover:bg-[#FFCF01] hover:text-zinc-900 transition-colors flex items-center justify-center gap-2">
                         Submit Enquiry <iconify-icon icon="solar:plain-2-linear" class="text-lg"></iconify-icon>
                     </button>
                 </form>
